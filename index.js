@@ -23,7 +23,11 @@ function prependCat(Arnold){
     Arnold=["Arnold",...cats]
     return Arnold
 }
-function removeLastCat(new)[
-    new = cats.slice(0,cats.length-1);
-    return new
-]
+function removeLastCat(){
+    let remainingCats = cats.slice(0,-1)
+    return remainingCats
+}
+function removeFirstCat(){
+    let remainingCats = cats.slice(1)
+    return remainingCats
+}
